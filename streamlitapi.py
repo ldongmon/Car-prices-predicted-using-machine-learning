@@ -1,8 +1,8 @@
-import pickle
+import joblib
 import streamlit  as st
 
 
-model=pickle.load(open("C:/Users/dongm/Desktop/Desktop/LEPRINCE/UDEMY DATA CAR PREDICTED/random_forest_model.pkl","rb"))
+model = pickle.load(open("C:/Users/dongm/Desktop/Desktop/LEPRINCE/UDEMY DATA CAR PREDICTED/CAR PRICE PREDICTED/random_forest_model.joblib", "rb"))
 
 def main():
     st.title("Car Pricing Prediction Solution")
