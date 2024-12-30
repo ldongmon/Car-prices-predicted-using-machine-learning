@@ -1,8 +1,13 @@
 import joblib
 import streamlit  as st
 
+from joblib import load
 
-model = pickle.load(open("C:/Users/dongm/Desktop/Desktop/LEPRINCE/UDEMY DATA CAR PREDICTED/CAR PRICE PREDICTED/random_forest_model.joblib", "rb"))
+
+
+# Charger le modèle au format joblib
+model = load("C:/Users/dongm/Desktop/Desktop/LEPRINCE/UDEMY DATA CAR PREDICTED/CAR PRICE PREDICTED/random_forest_model.joblib")
+
 
 def main():
     st.title("Car Pricing Prediction Solution")
